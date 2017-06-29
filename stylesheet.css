@@ -1,0 +1,141 @@
+@font-face {
+	font-family: "Emulogic";
+	src: url("fonts/emulogic.ttf");
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: "Emulogic", sans-serif;
+	color: #EEE;
+	text-shadow: 2px 2px #333;
+
+	background-color: black;
+}
+
+	#app-wrapper {
+		width: 320px;
+		margin: 0 auto;
+		margin-top: 5%;
+	}
+
+		#start-screen {
+			text-align: center;
+			height: 100%;
+			width: 100%;
+
+		}
+
+		#title{
+			text-align: center;
+		}
+
+		#title h1{
+			font-size: 24px;
+			
+		}
+
+		#choose-player {
+			height: 320px;
+			padding-top: 60px;
+		}
+
+		#choose-player>div:nth-child(-n+2) {
+			height: 120px;
+		}
+
+		#choose-player-vs {
+			padding-top: 40px;
+		}
+
+		#start-game-wrapper {
+			padding-top: 40px;
+		}
+
+	#game-screen {
+		width: 100%;
+		text-align: center;
+	}
+
+		#status-bar {
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+
+		.board-row{
+			height: 100px;
+		}
+		
+		.board-row>div:nth-child(-n+2){
+			height: 100%;
+			border-right: 5px solid white;
+		}
+
+		#board-row-1, #board-row-2 {
+			border-bottom: 5px solid white;
+		}
+
+		#board>div>p {
+			font-size: 42px;
+			padding-top: 16px;
+			padding-right: 5px;
+		}
+		
+		#board {
+			height: 300px;
+			width: 300px;
+			margin: 0 auto;
+		}
+
+		#board>div {
+			height: 100px;
+			width: 100px;
+			cursor: pointer;
+		}
+
+		#board>div:nth-child(1), #board>div:nth-child(2), #board>div:nth-child(4), #board>div:nth-child(5) {
+			border-bottom: 4px solid white;
+			border-right: 4px solid white;
+		}
+		
+		#board>div:nth-child(3), #board>div:nth-child(6) {
+			border-bottom: 4px solid white;
+		}
+
+		#board>div:nth-child(7), #board>div:nth-child(8) {
+			border-right: 4px solid white;
+		}
+		
+		#quit-bar {
+			padding-top: 32px;
+		}
+
+		#quit-bar p {
+			display: inline-block;
+			cursor: pointer;
+		}
+
+	#gameover-screen {
+		text-align: center;
+		height: 100%;
+		width: 100%;
+	}
+
+		#gameover {
+			margin-top: 40px;
+			margin-bottom: 40px;
+			font-size: 24px;
+		}
+
+		#gameover-result {
+			margin-bottom: 40px;
+		}
+		
+		#restart-question{
+			margin-bottom: 10px;
+		}
+
+	.option {
+		cursor: pointer;
+		display: inline-block;
+	}
